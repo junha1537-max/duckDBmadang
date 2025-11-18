@@ -1,3 +1,8 @@
+import os
+st.write("현재 실행 위치:", os.getcwd())
+st.write("madang.db 존재?:", os.path.exists("madang.db"))
+st.write("파일 목록:", os.listdir())
+
 # %%
 import streamlit as st 
 import pandas as pd
@@ -65,5 +70,6 @@ if len(name) > 0:
             con.execute(sql)
             con.commit()
             tab2.write("거래가 입력되었습니다.")
+
 
 
