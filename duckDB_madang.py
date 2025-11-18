@@ -6,7 +6,7 @@ import duckdb
 
 st.title("마당 서점 관리 시스템 ver. DuckDB")
 
-con = duckdb.connect(database='madang_store.db')   
+con = duckdb.connect(database='madang.db')   
 
 def query(sql):
     return con.execute(sql).fetchall()
